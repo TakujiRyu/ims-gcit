@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="signInSignUp">
+    <!-- NavBar -->    
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png"></a>
+            </div>
+            <div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">GAMES</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">HELP</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Sign In.html">SIGN IN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <h2>Sign In</h2>
+                                <hr id="Indicator">
+                            </div>
+
+                            <form id="LoginForm" class="form">
+                                <!-- <div class="form-field"> -->
+                                    <!-- <input type="email" name="email" id="email" placeholder="Email" id="email"> -->
+                                <div class="form-field">
+                                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email">
+                                    <small></small>
+                                </div>
+
+                                <div class="form-field">
+                                    <input type="password" name="password" id="password" autocomplete="off" placeholder="Password">
+                                    <small></small>
+                                </div>
+                                    
+                                <!-- </div> -->
+                    
+                                <!-- <div class="form-field"> -->
+                                    
+                                <!-- </div> -->
+                    
+                                <!-- <div class="form-field"> -->
+                                    <button type="submit" class="btn" onclick="validate()">Sign In</button>
+                                    <!-- <input type="submit" class="btn" value="Sign Up"> -->
+                                <!-- </div> -->
+                                <a href="">Forgot Password</a>
+                                <br><br>
+                                <p>OR</p>
+                                <a class="brand" href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a class="brand" href=""><i class="fa-brands fa-google"></i></a>
+                                <a class="brand" href=""><i class="fa-brands fa-apple"></i></a>
+                                <br>
+                                <p style="font-size: 12px;">Don't have an Account? <a href="Sign Up.html" style="color: #1876f2;">Sign Up</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <ul>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-twitch"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </ul>
+        </div>
+        <div class="footer">
+            <!-- <div class="container"> -->
+                <div class="footer-row">
+                    <div class="footer-col-1">
+                        <ul>
+                            <a href=""><li>Careers</li></a>
+                            <li> | </li>
+                            <a href=""><li>About</li></a>
+                            <li> | </li>
+                            <a href=""><li>Support</li></a>
+                            <li> | </li>
+                            <a href=""><li>Contact Us</li></a>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="Images/logo.jpg">
+                        <p>Witness Bhutan</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2022 - Group 6</p>
+                <div class="footer-col-3">
+                    <ul>
+                        <a href=""><li>Terms of Service </li></a>
+                        <a href=""><li>Privacy Policy</li></a>
+                        <a href=""><li>Legal</li></a>
+                        <a href=""><li>Cookies</li></a>
+                    </ul>
+                </div>
+            <!-- </div> -->
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
