@@ -212,11 +212,18 @@ nav ul ul ul li {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    border: none;
+    outline: none;
 }
 
 .small-container-1 h1 {
     text-align: center;
     padding: 30px;
+}
+
+.form-group {
+    border: none;
+    outline: none;
 }
 
 .row {
