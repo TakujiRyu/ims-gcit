@@ -2,7 +2,7 @@ const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
 const confirmPasswordEl = document.querySelector('#confirm-password');
-const form = document.querySelector('#LoginForm');
+const form = document.querySelector('#signup');
 
 const isRequired = value => value === '' ? false : true;
 const isBetween = (length, min, max) => length < min || length > max ? false : true;
@@ -11,13 +11,31 @@ form.addEventListener('submit', function (e) {
     e.preventDefault(); // prevent the form from submitting
 
     // validate fields
-    let isEmailValid = checkEmail(),
-        isPasswordValid = checkPassword();
-    let isFormValid = isEmailValid && isPasswordValid;
+    let isUsernameValid = checkUsername(),
+        isEmailValid = checkEmail(),
+        isPasswordValid = checkPassword(),
+        isConfirmPasswordValid = checkConfirmPassword();
+    let isFormValid = isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid;
     // submit to the server if the form is valid
     if (isFormValid) {
     }
 });
+
+const checkUsername = () => {
+    let valid = false;
+    const min = 3,
+        max = 25;
+    const username = usernameEl.value.trim();
+    if (!isRequired(username)) {
+        showError(usernameEl, 'Username cannot be blank.');
+    } else if (!isBetween(username.length, min, max)) {
+        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+    } else {
+        showSuccess(usernameEl);
+        valid = true;
+    }
+    return valid;
+};
 
 const showError = (input, message) => {
     // get the form-field element

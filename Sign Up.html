@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Sign Up</title>
 </head>
-<body class="signInSignUp">
+<body>
     <!-- NavBar -->   
      
         <div>
@@ -24,9 +24,7 @@
                 </label>
                 <input type="checkbox" id="btn">
                 <ul>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="help.html">HELP</a></li>
                     <li>
                         <label for="btn-1" class="show">ABOUT</label>
@@ -37,19 +35,16 @@
                             <li><a href="Notification and Company Calendar.html">Calendar</a></li>
                             <li><a href="Staff Task and tour.html">Staff</a></li>
                             <li><a href="publication.html">Publication</a></li>
-
                         </ul>
                     </li>
                     <li><a href="Sign In.html">SIGN IN</a></li>
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </nav>
         </div>
 
-    <!-- Content --> 
-
         <div class="account-page">
-            <div class="container">
-                <div class="row">
+            <div class="background">
                     <div class="col-2">
                         <div class="form-container">
                             <div class="form-btn">
@@ -64,7 +59,7 @@
                                 <button type="submit" class="btn"><i class="fa-brands fa-google"></i>Continue with Google</button>
                                 <button type="submit" class="btn"><i class="fa-brands fa-apple"></i>Continue with Apple</button>
                                 <br><br>
-                                <p style="font-size: 12px;">Already have an Account? <a href="Sign In.html" style="color: #1876f2;">Sign In</a></p>
+                                <p style="font-size: 12px;">Already have an Account? <a href="Sign In.html" style="color: #00adb5;">Sign In</a></p>
                             </form>
                         </div>
                     </div>
@@ -73,8 +68,8 @@
         </div>
         
     <!-- Footer -->
-        
-        <div class="footer">
+
+        <div class="footer follow">
             <ul>
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -85,34 +80,47 @@
             </ul>
         </div>
         <div class="footer">
-            <!-- <div class="container"> -->
-                <div class="row">
-                    <div class="footer-col-1">
-                        <h3>Download Our App</h3>
-                        <p>Download App for Android and IOS Mobile Phone</p>
-                        <div class="app-logo">
-                            <img src="Images/Play Store.jpg" alt="">
-                            <img src="Images/App Store.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="footer-col-2">
-                        <img src="Images/logo.jpg">
-                        <p>Witness Bhutan</p>
-                    </div>
-                    <div class="footer-col-3">
-                        <!-- <h3>Follow Us</h3> -->
-                        <ul>
-                            <li>Contact Us</li>
-                            <li>Privacy Policy</li>
-                            <li>Legal</li>
-                            <li>Cookies</li>
-                        </ul>
-                    </div>
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <ul>
+                        <a href=""><li>Careers</li></a>
+                        <li> | </li>
+                        <a href=""><li>About</li></a>
+                        <li> | </li>
+                        <a href=""><li>Support</li></a>
+                        <li> | </li>
+                        <a href=""><li>Contact Us</li></a>
+                    </ul>
                 </div>
-                <hr>
-                <p class="copyright">Copyright 2022 - K4JS</p>
-            <!-- </div> -->
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Group 6</p>
+            <div class="footer-col-2">
+                <ul>
+                    <a href=""><li>Terms of Service </li></a>
+                    <a href="policy.html"><li>Privacy Policy</li></a>
+                    <a href=""><li>Legal</li></a>
+                    <a href=""><li>Cookies</li></a>
+                </ul>
+            </div>
         </div>
         <script src="script.js"></script>
+        <!-- <script>
+            var LoginForm = document.getElementById("LoginForm")
+            var RegForm = document.getElementById("RegForm")
+            var Indicator = document.getElementById("Indicator")
+
+            function register() {
+                RegForm.style.transform = "translateX(0px)"
+                LoginForm.style.transform = "translateX(0px)"
+                Indicator.style.transform = "translateX(100px)"
+            }
+
+            function login() {
+                RegForm.style.transform = "translateX(300px)"
+                LoginForm.style.transform = "translateX(300px)"
+                Indicator.style.transform = "translateX(0px)"
+            }
+        </script> -->
 </body>   
 </html>
