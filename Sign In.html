@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Sign In</title>
 </head>
 <body>
     <!-- NavBar -->   
@@ -20,7 +24,9 @@
                 </label>
                 <input type="checkbox" id="btn">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">GAMES</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">FAQ</a></li>
                     <li><a href="help.html">HELP</a></li>
                     <li>
                         <label for="btn-1" class="show">ABOUT</label>
@@ -31,53 +37,52 @@
                             <li><a href="Notification and Company Calendar.html">Calendar</a></li>
                             <li><a href="Staff Task and tour.html">Staff</a></li>
                             <li><a href="publication.html">Publication</a></li>
+
                         </ul>
                     </li>
                     <li><a href="Sign In.html">SIGN IN</a></li>
-                    <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="background-2"></div>
-        <div class="background">
-            <div class="small-container-1" style="width: 30%; height: 65vh;">
-                <form id="signup" class="form">
-                    <h1>Sign Up</h1>
-                    <div class="form-field">
-                        <label for="username">Username: </label>
-                        <input type="text" name="username" id="username" autocomplete="off">
-                        <small></small>
-                    </div>
-    
-                    <div class="form-field">
-                        <label for="email">Email: </label>
-                        <input type="text" name="email" id="email" autocomplete="off">
-                        <small></small>
-                    </div>
-    
-                    <div class="form-field">
-                        <label for="password">Password: </label>
-                        <input type="password" name="password" id="password" autocomplete="off">
-                        <small></small>
-                    </div>
-    
-                    <div class="form-field">
-                        <label for="confirm-password">Confirm Password: </label>
-                        <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
-                        <small></small>
-                    </div>
-    
-                    <div class="form-field">
-                        <input type="submit" class="btn" value="Sign Up">
-                    </div>
-                    <p style="font-size: 12px;">Don't have an Account? <a href="Sign Up.html" style="color: #00adb5;">Sign Up</a></p>
 
-                </form>
+        <div class="account-page">
+            <div class="background">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <h2>Sign In</h2>
+                                <hr id="Indicator">
+                            </div>
+
+                            <form id="LoginForm">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Sign In</button>
+                                <a href="chpwd.html">Forgot Password</a>
+                                <br><br>
+                                <p>OR</p>
+                                <a class="brand" href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a class="brand" href=""><i class="fa-brands fa-google"></i></a>
+                                <a class="brand" href=""><i class="fa-brands fa-apple"></i></a>
+                                <br>
+                                <p style="font-size: 12px;">Don't have an Account? <a href="Sign Up.html" style="color: #00adb5;">Sign Up</a></p>
+                            </form>
+
+
+                            <!-- <form id="RegForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
+        
     <!-- Footer -->
 
         <div class="footer follow">
@@ -111,11 +116,27 @@
                     <a href=""><li>Terms of Service </li></a>
                     <a href="policy.html"><li>Privacy Policy</li></a>
                     <a href=""><li>Legal</li></a>
-                    <a href="Leave Application form.html"><li>Leave</li></a>
+                    <a href=""><li>Cookies</li></a>
                 </ul>
             </div>
         </div>
-        
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+        <!-- <script>
+            var LoginForm = document.getElementById("LoginForm")
+            var RegForm = document.getElementById("RegForm")
+            var Indicator = document.getElementById("Indicator")
+
+            function register() {
+                RegForm.style.transform = "translateX(0px)"
+                LoginForm.style.transform = "translateX(0px)"
+                Indicator.style.transform = "translateX(100px)"
+            }
+
+            function login() {
+                RegForm.style.transform = "translateX(300px)"
+                LoginForm.style.transform = "translateX(300px)"
+                Indicator.style.transform = "translateX(0px)"
+            }
+        </script> -->
+</body>   
 </html>
