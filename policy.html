@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="css/policy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Calendar</title>
+    <title>Policy</title>
 </head>
 <body>
     <!-- NavBar -->   
@@ -47,12 +46,38 @@
             </nav>
         </div>
 
-    <!-- Content --> 
-        <div class="background-3"></div>
-        <div class="background-4">
-            <div id="calendar"></div>
-        </div>
-
+    <!-- Rules and Regulations -->
+    <div class="background-2"></div>
+    <div class="rule-container">
+        <h3>EPIC GAMES - COMMUNITY RULES</h3>
+        <p>We want Epic Games to be a safe and fun place for you to play games or hang with your friends. 
+            We need your help to keep it that way.<br><br>
+            The Epic Terms of Service and other agreements contain rules that apply to your use of 
+            Epic's services, so some of these rules may look familiar. But Epic offers so many ways to interact with others
+            through its games, services, and environments that more explanation of our community standards is helpful. <br><br>
+            Following the rules is not super hard. If you violate these rules, however, it can result in action against your
+            account all the way up to a permanent ban. </p>
+        <h4>Personal Information</h4>
+        <p>You're never allowed to share other people's personal information other than display names, and we strongly encourage 
+            you not to share yours. Sharing or threatening to share someone's alternate account names, real-world location, real name, etc. is not allowed.
+        </p>
+        <h4>Intolerance and Discrimination</h4>
+         <p>Epic does not tolerate any form of hate or discrimination.<br><br>
+            
+            The Epic ecosystem welcomes diversity in race, ethnicity, color, religion, gender identity, sexual orientation, 
+            ability, national origin, and other groups. Don't demean, marginalize, use hateful language against, or belittle other users or groups. 
+        </p>
+        <h4>Player Reporting</h4>
+        <p>We are all a part of this community, and it is up to us to keep it friendly, fun, and free of negativity. <br><br>
+           If you encounter a player not respecting the Community Rules, Content Guidelines, and other players, you can report them via in-game reporting.<br><br>
+            If you meet someone you don't like but aren't violating the Community Rules, you can block the person.</p>
+        
+        <h4>Safety and Security</h4>
+        <p>Keep account information safe and private. Giving access to your account puts you at risk. If something seems suspicious or too good to be true, it probably
+         is. There's no such thing as free V-Bucks. Do not share your account information or the account information of others.</p>
+    </div>
+       
+    
     <!-- Footer -->
 
         <div class="footer follow">
@@ -90,33 +115,5 @@
                 </ul>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <script src="js/evo-calendar.min.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                $('#calendar').evoCalendar({
-
-                    theme: "Midnight Blue",
-                    calendarEvents: [{
-                            id: 'event1', // Event's ID (required)
-                            name: "New Year", // Event name (required)
-                            date: "January/1/2022", // Event date (required)
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "holiday", // Event type (required)
-                            everyYear: true // Same event every year (optional)
-                        },
-                        {
-                            name: "Vacation Leave",
-                            badge: "02/13 - 02/15", // Event badge (optional)
-                            date: ["February/13/2020", "February/15/2020"], // Date range
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "event",
-                            color: "#63d867" // Event custom color (optional)
-                        }
-                    ]
-                })
-            })
-        </script>
 </body>   
 </html>

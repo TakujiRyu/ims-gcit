@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="publication.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Calendar</title>
+    <title>Publication</title>
 </head>
 <body>
     <!-- NavBar -->   
@@ -46,11 +45,47 @@
                 </ul>
             </nav>
         </div>
+    
+        <!-- Publication -->
 
-    <!-- Content --> 
-        <div class="background-3"></div>
-        <div class="background-4">
-            <div id="calendar"></div>
+        <div class="background-2"></div>
+        <div class="flex-container">
+                <div class="card">
+                    <div class="card-title">
+                        <img class="image" src="img1.webp" alt="">
+                        <h3>Unreal Engine 5.1 is now Available with Advanced Real-Time 3D Creation</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <img class="image" src="img2.jpeg" alt="">
+                        <h3>Epic Games Teams Up with Autodesk to Accelerate Realtime, Immersive Design across Industry</h3>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-title">
+                    <img class="image" src="img3.jpg" alt="">
+                    <h3>The Lego Group and Epi Games Team Up to Build a Place for Kids to Play in the Metaverse</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img class="image" src="img4.webp" alt="">
+                    <h3>Harmonix Joins Epic Games to Create Immersive Music Experiences</h3>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="card-title">
+                        <img class="image" src="img5.webp" alt="">
+                        <h3>Epic Games and SuperAwesome Offer Free Parent Verification for all Developers</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <img class="image" src="img6.webp" alt="">
+                        <h3>Epic Online Services Launches Free In-Game Voice and Easy Anti-Cheat</h3>
+                    </div>
+                </div>
         </div>
 
     <!-- Footer -->
@@ -90,33 +125,5 @@
                 </ul>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <script src="js/evo-calendar.min.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                $('#calendar').evoCalendar({
-
-                    theme: "Midnight Blue",
-                    calendarEvents: [{
-                            id: 'event1', // Event's ID (required)
-                            name: "New Year", // Event name (required)
-                            date: "January/1/2022", // Event date (required)
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "holiday", // Event type (required)
-                            everyYear: true // Same event every year (optional)
-                        },
-                        {
-                            name: "Vacation Leave",
-                            badge: "02/13 - 02/15", // Event badge (optional)
-                            date: ["February/13/2020", "February/15/2020"], // Date range
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "event",
-                            color: "#63d867" // Event custom color (optional)
-                        }
-                    ]
-                })
-            })
-        </script>
 </body>   
 </html>

@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="css/help.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Calendar</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
     <!-- NavBar -->   
@@ -47,11 +46,48 @@
             </nav>
         </div>
 
-    <!-- Content --> 
-        <div class="background-3"></div>
-        <div class="background-4">
-            <div id="calendar"></div>
+    <!-- Help Center -->
+
+    <div class="background-2"></div>
+    <div class="help-container">
+        <h3>Welcome to Epic Games Player Support</h3>
+        <form>
+            <!-- <span class="material-symbols-outlined">search</span> -->
+            <input type="search" class="search-text" placeholder="SEARCH HELP CENTER">
+            <i class="fa fa-search"></i>
+        </form>
+        <br><br>
+        <div class="container-1">
+            <div class="box">
+                <h4><b><span class="material-symbols-outlined">stadia_controller</span>
+                    Games</b></h4>
+                <button>Fortnite</button><br>
+                <button>Rocket League</button><br>
+                <button>Fall Guys</button><br>
+                <button>Rumbleverse</button><br>
+                <button>PC Building Simnulator</button><br>
+                <button>Show All Games</button><br>
+            </div><br>
+            <div class="box">
+                <h4><b><span class="material-symbols-outlined">support</span>
+                     Epic Games Store</b></h4>
+                <button>Launcher Support</button><br>
+                <button>Error Codes</button><br>
+                <button>Billing Support</button><br>
+                <button>Store Refund Policy</button><br>
+            </div>
+            <div class="box">
+                <h4><b><span class="material-symbols-outlined">account_circle</span>
+                    Accounts</b</h4>
+                <button>General Support</button><br>
+                <button>Account Security</button><br>
+                <button>Connect Accounts</button><br>
+                <button>Parental Controls</button><br>
+                <button>Epic Account Services</button><br>
+            </div>
         </div>
+
+    </div>
 
     <!-- Footer -->
 
@@ -90,33 +126,5 @@
                 </ul>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <script src="js/evo-calendar.min.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                $('#calendar').evoCalendar({
-
-                    theme: "Midnight Blue",
-                    calendarEvents: [{
-                            id: 'event1', // Event's ID (required)
-                            name: "New Year", // Event name (required)
-                            date: "January/1/2022", // Event date (required)
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "holiday", // Event type (required)
-                            everyYear: true // Same event every year (optional)
-                        },
-                        {
-                            name: "Vacation Leave",
-                            badge: "02/13 - 02/15", // Event badge (optional)
-                            date: ["February/13/2020", "February/15/2020"], // Date range
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "event",
-                            color: "#63d867" // Event custom color (optional)
-                        }
-                    ]
-                })
-            })
-        </script>
-</body>   
+</body>
 </html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.card{
+    max-width: 504px;
+    max-height: 580px;
+    display: flex;
+    flex-direction: row;
+    border:2px solid black;
+    box-shadow: 0 3px 3px;
+    margin:20px;
+    margin-left:30px;
+}
+.card-title h2{
+    position: relative;
+    /* bottom:10px; */
+}
+.image{
+    flex-wrap:wrap ;
+    position: center;
+    text-align: center;
+    height: 500px;
+    width:500px;
+}
+.image:hover{
+    transform:scale(0.97);
+}
+@media screen and (max-width:500px){
+    .card{
+        justify-content: center;
+        max-width: 474px;
+    }
+    .image{
+        height: 480px;
+        width:470px;
+    }
+}

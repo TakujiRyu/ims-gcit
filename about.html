@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/evo-calendar.min.css">
-    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Calendar</title>
+    <title>About</title>
 </head>
 <body>
     <!-- NavBar -->   
@@ -47,11 +45,66 @@
             </nav>
         </div>
 
-    <!-- Content --> 
-        <div class="background-3"></div>
-        <div class="background-4">
-            <div id="calendar"></div>
+    <!-- Content -->    
+
+    <div class="background-2"></div>
+    <div class="small-container-1">
+        <h1>Assassin Creed</h1>
+
+        <div class="row">
+            <div class="col-2">   
+                <p>Created by Patrice Désilets, Jade Raymond, and Corey May, 
+                    the Assassin's Creed series depicts a fictional millennia-old struggle between the Assassins, 
+                    who fight for peace and free will, and the Templars, who desire peace through order and control.</p>
+            </div>
+            <div class="col-2">   
+                <img src="Images/Assassin Vs Templar.jpg">
+            </div>
         </div>
+
+        <div class="row">
+            <div class="col-2">   
+                <img src="Images/Assassin's Creed 4.jpg">
+            </div>
+            <div class="col-2">   
+                <p>In most games, players control a historical Assassin while also playing as an Assassin Initiate or 
+                    someone caught in the Assassin-Templar conflict in the present-day framing story.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">   
+                <p>The first five main games follow Desmond Miles, a descendant of several important Assassins throughout history, 
+                    who uses a machine called the Animus to relive his ancestors' memories and find powerful artifacts called "Pieces of Eden" while 
+                    also attempting to prevent a catastrophic event said to wipe out humanity by the end of 2012.</p>
+            </div>
+            <div class="col-2">   
+                <img src="Images/Assassins-Creed-Desmond-Miles.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">   
+                <img src="Images/aci_cover.jpg">
+            </div>
+            <div class="col-2">   
+                <p>From Assassin's Creed IV: Black Flag to Assassin's Creed Syndicate, Assassin initiates and employees of Abstergo 
+                    (a company used as a front by the modern-day Templars) record genetic memories using the Helix software, 
+                    helping the Templars and Assassins find new Pieces of Eden in the modern world. </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">   
+                <p>The most recent games, Assassin's Creed Origins, Assassin's Creed Odyssey, and Assassin's Creed Valhalla, 
+                    follow ex-Abstergo employee Layla Hassan on her own quest to save humanity from another disaster.</p>
+            </div>
+            <div class="col-2">   
+                <img src="Images/EkPJHbnXkAMjqF4.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="background-2"></div>
 
     <!-- Footer -->
 
@@ -90,33 +143,7 @@
                 </ul>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <script src="js/evo-calendar.min.js"></script>
 
-        <script>
-            $(document).ready(function() {
-                $('#calendar').evoCalendar({
-
-                    theme: "Midnight Blue",
-                    calendarEvents: [{
-                            id: 'event1', // Event's ID (required)
-                            name: "New Year", // Event name (required)
-                            date: "January/1/2022", // Event date (required)
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "holiday", // Event type (required)
-                            everyYear: true // Same event every year (optional)
-                        },
-                        {
-                            name: "Vacation Leave",
-                            badge: "02/13 - 02/15", // Event badge (optional)
-                            date: ["February/13/2020", "February/15/2020"], // Date range
-                            description: "Vacation leave for 3 days.", // Event description (optional)
-                            type: "event",
-                            color: "#63d867" // Event custom color (optional)
-                        }
-                    ]
-                })
-            })
-        </script>
+    <script src="script.js"></script>
 </body>   
 </html>
